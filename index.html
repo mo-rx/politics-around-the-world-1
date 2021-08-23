@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stellar by HTML5 UP</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Politics Around the World</h1>
+						<p>A map by Andy to centralize relevant political information into one global resource.<br />
+						Developed with &#128150; by Moeen.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">View the Map!</a></li>
+							<li><a href="#first">About</a></li>
+							<li><a href="#second">Addtl. Resources</a></li>
+							<li><a href="#cta">Sources</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+						<script type="text/javascript">
+						google.charts.load('current', {
+							'packages':['geochart'],
+						});
+						google.charts.setOnLoadCallback(drawRegionsMap);
+
+						function drawRegionsMap() {
+							var data = google.visualization.arrayToDataTable([
+							['Country', 'Party System', { role: "tooltip", type: "string", p: { html: true } }],
+							['Afghanistan', 'Afghanistan', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): NUP, SP, Hizb ut-Tahrir, AP, IP, RP, IS, IM, AM, IUP, IDO, NIM</li><li>Capital: Kabul</li><li>Population (2020): 39,074,280</li><li>Land Area (Km<sup>2</sup>): 652,860</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Albania', 'Albania', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PS, PD, LSI, PDIU, PR, PBDNJ, PKDSH</li><li>Capital: Tirana</li><li>Population (2020): 2,877,239</li><li>Land Area (Km<sup>2</sup>): 27,400</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Algeria', 'Algeria', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FLN, MSP, RND, Future Front, El Binaa</li><li>Capital: Algiers</li><li>Population (2020): 43,984,569</li><li>Land Area (Km<sup>2</sup>): 2,381,740</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['American Samoa', 'American Samoa', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): A, C, D, F, G, L, N, R, S, WC, WF</li><li>Capital: Pago Pago</li><li>Population (2020): 55,169</li><li>Land Area (Km<sup>2</sup>): 200</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Andorra', 'Andorra', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): DA, PS, PLA, SDP</li><li>Capital: Andorra la Vella</li><li>Population (2020): 77,287</li><li>Land Area (Km<sup>2</sup>): 470</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Angola', 'Angola', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): MPLA</li><li>Capital: Luanda</li><li>Population (2020): 33,032,075</li><li>Land Area (Km<sup>2</sup>): 1,246,700</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Anguilla', 'Anguilla', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): APM, AUF</li><li>Capital: The Valley</li><li>Population (2020): 15,026</li><li>Land Area (Km<sup>2</sup>): 90</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Antigua and Barbuda', 'Antigua and Barbuda', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): ABLP, UPP/BPM</li><li>Capital: St. John's</li><li>Population (2020): 98,069</li><li>Land Area (Km<sup>2</sup>): 440</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Argentina', 'Argentina', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PJ, PRO, UCR</li><li>Capital: Buenos Aires</li><li>Population (2020): 45,267,449</li><li>Land Area (Km<sup>2</sup>): 2,736,690</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Armenia', 'Armenia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Civil Contract, Armenia Alliance, I Have Honor Alliance</li><li>Capital: Yerevan</li><li>Population (2020): 2,964,219</li><li>Land Area (Km<sup>2</sup>): 28,470</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Aruba', 'Aruba', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): AVP, MEP, DR</li><li>Capital: Oranjestad</li><li>Population (2020): 106,845</li><li>Land Area (Km<sup>2</sup>): 180</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Australia', 'Australia', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): ALP, LP/NAT</li><li>Capital: Canberra</li><li>Population (2020): 25,550,683</li><li>Land Area (Km<sup>2</sup>): 7,682,300</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Austria', 'Austria', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): SPÖ, ÖVP, FPÖ, GRÜNE, TS, NEOS</li><li>Capital: Vienna</li><li>Population (2020): 9,015,361</li><li>Land Area (Km<sup>2</sup>): 82,409</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Azerbaijan', 'Azerbaijan', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): YAP</li><li>Capital: Baku</li><li>Population (2020): 10,154,978</li><li>Land Area (Km<sup>2</sup>): 82,658</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bahamas', 'Bahamas', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FNM, PLP</li><li>Capital: Nassau</li><li>Population (2020): 393,893</li><li>Land Area (Km<sup>2</sup>): 10,010</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bahrain', 'Bahrain', "<ul class='chart-popup'><li>Party System: Non-Party System</li><li>Ruling Party(s): Independents</li><li>Capital: Manama</li><li>Population (2020): 1,711,057</li><li>Land Area (Km<sup>2</sup>): 760</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bangladesh', 'Bangladesh', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): AL, BNP, JP(E), JASOD</li><li>Capital: Dhaka</li><li>Population (2020): 164,972,348</li><li>Land Area (Km<sup>2</sup>): 130,170</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Barbados', 'Barbados', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): BLP, DLP</li><li>Capital: Bridgetown</li><li>Population (2020): 287,437</li><li>Land Area (Km<sup>2</sup>): 430</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Belarus', 'Belarus', "<ul class='chart-popup'><li>Party System: Non-Party System</li><li>Ruling Party(s): Communist Party of Belarus, Belarusian Patriotic Party, Republican Party of Labour and Justice</li><li>Capital: Minsk</li><li>Population (2020): 9,448,772</li><li>Land Area (Km<sup>2</sup>): 202,910</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Belgium', 'Belgium', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Dutch side: CD&V, sp.a, VLD, Groen, N-VA, VB, etc.; French side: CDH, PS, MR, Ecolo, PP, etc.; German side: CSP, PFF; Unitary: PTB–GO!/PVDA+</li><li>Capital: Brussels</li><li>Population (2020): 11,598,451</li><li>Land Area (Km<sup>2</sup>): 30,280</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Belize', 'Belize', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PUP, UDP</li><li>Capital: Belmopan</li><li>Population (2020): 398,845</li><li>Land Area (Km<sup>2</sup>): 22,810</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Benin', 'Benin', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FCBE-Amana, UN, PRD</li><li>Capital: Porto-Novo</li><li>Population (2020): 12,175,480</li><li>Land Area (Km<sup>2</sup>): 112,760</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bermuda', 'Bermuda', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PLP, OBA</li><li>Capital: Hamilton</li><li>Population (2020): 62,237</li><li>Land Area (Km<sup>2</sup>): 50</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bhutan', 'Bhutan', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): DNT, DPT</li><li>Capital: Thimphu</li><li>Population (2020): 773,069</li><li>Land Area (Km<sup>2</sup>): 38,117</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bolivia', 'Bolivia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): MAS, FRI, Creemos</li><li>Capital: Sucre</li><li>Population (2020): 11,700,207</li><li>Land Area (Km<sup>2</sup>): 1,083,300</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bolivia', 'Bolivia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): MAS, FRI, Creemos</li><li>Capital: La Paz</li><li>Population (2020): 11,700,207</li><li>Land Area (Km<sup>2</sup>): 1,083,300</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bosnia and Herzegovina', 'Bosnia and Herzegovina', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): SDA, SNSD, HDZ BiH</li><li>Capital: Sarajevo</li><li>Population (2020): 3,277,152</li><li>Land Area (Km<sup>2</sup>): 51,000</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Botswana', 'Botswana', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Botswana Democratic Party</li><li>Capital: Gaborone</li><li>Population (2020): 2,359,585</li><li>Land Area (Km<sup>2</sup>): 566,730</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Brazil', 'Brazil', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PT, PSL, PP, PL, PSD, MDB, PSDB, Republicans, PSB, PDT, DEM, Solidarity, PSOL, PROS, PTB, PODE, Citizenship, PSC, PCdoB, NOVO, Onwards, Patriot, PIRATAS, PV, REDE, PRTB, PMN, PTC, PMB, PSTU, PCB, PCO, UP</li><li>Capital: Brasília</li><li>Population (2020): 212,821,986</li><li>Land Area (Km<sup>2</sup>): 8,358,140</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['British Virgin Islands', 'British Virgin Islands', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): VIP, NDP, PU, PVIM</li><li>Capital: Road Town</li><li>Population (2020): 30,266</li><li>Land Area (Km<sup>2</sup>): 150</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Brunei', 'Brunei', "<ul class='chart-popup'><li>Party System: Absolute Monarchy</li><li>Ruling Party(s): N/A</li><li>Capital: Bandar Seri Begawan</li><li>Population (2020): 438,202</li><li>Land Area (Km<sup>2</sup>): 5,270</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Bulgaria', 'Bulgaria', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): GERB, BSP, DPS, IMRO, NFSB, Attack, Volya, Democratic Bulgaria, TASP</li><li>Capital: Sofia</li><li>Population (2020): 6,939,018</li><li>Land Area (Km<sup>2</sup>): 108,560</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Burkina Faso', 'Burkina Faso', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): CDP</li><li>Capital: Ouagadougou</li><li>Population (2020): 20,997,293</li><li>Land Area (Km<sup>2</sup>): 273,600</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Burundi', 'Burundi', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CNDD-FDD, FRODEBU, UPRONA</li><li>Capital: Bujumbura</li><li>Population (2020): 11,948,454</li><li>Land Area (Km<sup>2</sup>): 25,680</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Cambodia', 'Cambodia', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): CPP</li><li>Capital: Phnom Penh</li><li>Population (2020): 16,758,448</li><li>Land Area (Km<sup>2</sup>): 176,520</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Cameroon', 'Cameroon', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): RDPC</li><li>Capital: Yaoundé</li><li>Population (2020): 26,655,083</li><li>Land Area (Km<sup>2</sup>): 472,710</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Canada', 'Canada', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): LPC, CPC, BQ, NDP, GPC</li><li>Capital: Ottawa</li><li>Population (2020): 37,799,407</li><li>Land Area (Km<sup>2</sup>): 9,093,510</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Cayman Islands', 'Cayman Islands', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PPM, UDP</li><li>Capital: George Town</li><li>Population (2020): 65,854</li><li>Land Area (Km<sup>2</sup>): 240</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Central African Republic', 'Central African Republic', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): KNK, UNDP, URCA, RDC, MLPC</li><li>Capital: Bangui</li><li>Population (2020): 4,843,954</li><li>Land Area (Km<sup>2</sup>): 622,980</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Chad', 'Chad', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): MPS</li><li>Capital: N'Djamena</li><li>Population (2020): 16,502,877</li><li>Land Area (Km<sup>2</sup>): 1,259,200</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Chile', 'Chile', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): UDI, DC, RN, PS, PPD, PCCh, PR, PRO, MAS, EVOPOLI, PRI, FRVS, RD</li><li>Capital: Santiago</li><li>Population (2020): 19,144,605</li><li>Land Area (Km<sup>2</sup>): 743,532</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['China', 'China', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): CPC, RCCK, JS, CDL, CDNCA, CAPD, CPWDP, CZGP, TDSGL</li><li>Capital: Beijing</li><li>Population (2020): 1,440,297,825</li><li>Land Area (Km<sup>2</sup>): 9,388,211</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Colombia', 'Colombia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CD, Conservative, Liberal, CR, U, Green</li><li>Capital: Bogotá</li><li>Population (2020): 50,976,248</li><li>Land Area (Km<sup>2</sup>): 1,109,500</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Comoros', 'Comoros', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): BM, CRC, PRC</li><li>Capital: Moroni</li><li>Population (2020): 872,695</li><li>Land Area (Km<sup>2</sup>): 1,861</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Cook Islands', 'Cook Islands', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CIP, DP, OCI</li><li>Capital: Avarua</li><li>Population (2020): 17,567</li><li>Land Area (Km<sup>2</sup>): 240</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Costa Rica', 'Costa Rica', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PLN, PAC, FA, PUSC, PML</li><li>Capital: San José</li><li>Population (2020): 5,102,158</li><li>Land Area (Km<sup>2</sup>): 51,060</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Croatia', 'Croatia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): HDZ, SDP, Most, HNS, IDS, HSS, GLAS</li><li>Capital: Zagreb</li><li>Population (2020): 4,100,719</li><li>Land Area (Km<sup>2</sup>): 55,960</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Cuba', 'Cuba', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PDC, CSDP</li><li>Capital: Havana</li><li>Population (2020): 11,325,391</li><li>Land Area (Km<sup>2</sup>): 106,440</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Curaçao', 'Curaçao', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): MFK</li><li>Capital: Willemstad</li><li>Population (2020): 164,211</li><li>Land Area (Km<sup>2</sup>): 444</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Cyprus', 'Cyprus', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): DISY, AKEL, DIKO, EDEK, SYPOL, KA, Greens, ELAM</li><li>Capital: Nicosia</li><li>Population (2020): 1,208,886</li><li>Land Area (Km<sup>2</sup>): 9,240</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Côte d\'Ivoire', 'Côte d\'Ivoire', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FPI, MPCI/FNCI, PDCI</li><li>Capital: Yamoussoukro</li><li>Population (2020): 26,486,282</li><li>Land Area (Km<sup>2</sup>): 318,000</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Denmark', 'Denmark', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): A, B, C, D F, I, O, V, Ø, Å</li><li>Capital: Copenhagen</li><li>Population (2020): 5,795,780</li><li>Land Area (Km<sup>2</sup>): 42,430</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Djibouti', 'Djibouti', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): RPP/UMP</li><li>Capital: Djibouti</li><li>Population (2020): 990,447</li><li>Land Area (Km<sup>2</sup>): 23,180</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Dominica', 'Dominica', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): DUWP, LPD</li><li>Capital: Roseau</li><li>Population (2020): 72,017</li><li>Land Area (Km<sup>2</sup>): 750</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Dominican Republic', 'Dominican Republic', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PLD, PRD, PRSC, PCR, PQD, FPN</li><li>Capital: Santo Domingo</li><li>Population (2020): 10,866,667</li><li>Land Area (Km<sup>2</sup>): 48,320</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Ecuador', 'Ecuador', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CREO, CD, MUPP, ID, PSC, UP</li><li>Capital: Quito</li><li>Population (2020): 17,688,599</li><li>Land Area (Km<sup>2</sup>): 248,360</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Egypt', 'Egypt', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): HMA, Wafd, HMDI, HSG</li><li>Capital: Cairo</li><li>Population (2020): 102,659,126</li><li>Land Area (Km<sup>2</sup>): 995,450</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['El Salvador', 'El Salvador', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FMLN, ARENA, PCN, GANA, PDC, CD, NI</li><li>Capital: San Salvador</li><li>Population (2020): 6,491,923</li><li>Land Area (Km<sup>2</sup>): 20,720</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Equatorial Guinea', 'Equatorial Guinea', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): PDGE</li><li>Capital: Malabo</li><li>Population (2020): 1,410,419</li><li>Land Area (Km<sup>2</sup>): 28,050</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Eritrea', 'Eritrea', "<ul class='chart-popup'><li>Party System: One Party</li><li>Ruling Party(s): PFDJ</li><li>Capital: Asmara</li><li>Population (2020): 3,554,797</li><li>Land Area (Km<sup>2</sup>): 101,000</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Estonia', 'Estonia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): ERE, EKE, EKRE, I, SDE</li><li>Capital: Tallinn</li><li>Population (2020): 1,326,693</li><li>Land Area (Km<sup>2</sup>): 42,390</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Ethiopia', 'Ethiopia', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): PP</li><li>Capital: Addis Ababa</li><li>Population (2020): 115,434,444</li><li>Land Area (Km<sup>2</sup>): 1,000,000</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Falkland Islands', 'Falkland Islands', "<ul class='chart-popup'><li>Party System: Non Partisan Democracy</li><li>Ruling Party(s): N/A</li><li>Capital: Stanley</li><li>Population (2020): 3,497</li><li>Land Area (Km<sup>2</sup>): 12,170</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Fiji', 'Fiji', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FFP, FLP, FUFP, NFP, OFP, PDP, SODELPA</li><li>Capital: Suva</li><li>Population (2020): 897,573</li><li>Land Area (Km<sup>2</sup>): 18,270</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Finland', 'Finland', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Kesk., PS Kok., SDP, Vihr., Vas. SFP, KD, Sin.</li><li>Capital: Helsinki</li><li>Population (2020): 5,542,237</li><li>Land Area (Km<sup>2</sup>): 303,890</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['France', 'France', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): RN, LR, REM, PS, FI</li><li>Capital: Paris</li><li>Population (2020): 65,298,930</li><li>Land Area (Km<sup>2</sup>): 547,557</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['French Guiana', 'French Guiana', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): ADG, DVG, PS, UMP</li><li>Capital: Cayenne</li><li>Population (2020): 299,958</li><li>Land Area (Km<sup>2</sup>): 82,200</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['French Polynesia', 'French Polynesia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): AA/TTA, FA/ADN, OPTA/TTA, TH-FLP/UPLD, TH-UMP/UPLD, UPLD/UDSP</li><li>Capital: Papeete</li><li>Population (2020): 281,191</li><li>Land Area (Km<sup>2</sup>): 3,660</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Gabon', 'Gabon', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): PDG</li><li>Capital: Libreville</li><li>Population (2020): 2,234,448</li><li>Land Area (Km<sup>2</sup>): 257,670</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Gambia', 'Gambia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): C2016, APRC, GDC</li><li>Capital: Banjul</li><li>Population (2020): 2,427,782</li><li>Land Area (Km<sup>2</sup>): 10,120</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Georgia', 'Georgia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): GD</li><li>Capital: Tbilisi</li><li>Population (2020): 3,987,805</li><li>Land Area (Km<sup>2</sup>): 69,490</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Germany', 'Germany', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CDU/CSU, SPD, The Left, Greens/Alliance90, FDP, Alternative for Germany, Christian Democratic Union, Social Democratic Party of Germany</li><li>Capital: Berlin</li><li>Population (2020): 83,830,972</li><li>Land Area (Km<sup>2</sup>): 348,560</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Ghana', 'Ghana', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): NDC, NPP</li><li>Capital: Accra</li><li>Population (2020): 31,181,428</li><li>Land Area (Km<sup>2</sup>): 227,540</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Gibraltar', 'Gibraltar', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): GSD, Alliance (GSLP/LP)</li><li>Capital: Gibraltar</li><li>Population (2020): 33,689</li><li>Land Area (Km<sup>2</sup>): 10</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Greece', 'Greece', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): ND, SYRIZA, KINAL, KKE, EL, MERA25</li><li>Capital: Athens</li><li>Population (2020): 10,413,936</li><li>Land Area (Km<sup>2</sup>): 128,900</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Greenland', 'Greenland', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): S, IA, A, PI, D</li><li>Capital: Nuuk</li><li>Population (2020): 56,787</li><li>Land Area (Km<sup>2</sup>): 410,450</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Grenada', 'Grenada', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): NDC, NNP</li><li>Capital: St. George's</li><li>Population (2020): 112,614</li><li>Land Area (Km<sup>2</sup>): 340</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Guam', 'Guam', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): A, C, D, F, G, L, N, R, S, WC, WF</li><li>Capital: Hagåtña</li><li>Population (2020): 169,031</li><li>Land Area (Km<sup>2</sup>): 540</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Guatemala', 'Guatemala', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PP, UNE, GANA, UCN, LIDER, CREO</li><li>Capital: Guatemala City</li><li>Population (2020): 17,971,382</li><li>Land Area (Km<sup>2</sup>): 107,160</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Guinea', 'Guinea', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PUP, UPG</li><li>Capital: Conakry</li><li>Population (2020): 13,191,279</li><li>Land Area (Km<sup>2</sup>): 245,720</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Guinea-Bissau', 'Guinea-Bissau', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PAIGC, PRS</li><li>Capital: Bissau</li><li>Population (2020): 1,975,718</li><li>Land Area (Km<sup>2</sup>): 28,120</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Guyana', 'Guyana', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): APNU/AFC coalition, PPP/C, ANUG</li><li>Capital: Georgetown</li><li>Population (2020): 787,215</li><li>Land Area (Km<sup>2</sup>): 196,850</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Haiti', 'Haiti', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Tèt Kale, LAPEH, Pitit Desalin, Lavalas, Fusion of Haitian SD</li><li>Capital: Port-au-Prince</li><li>Population (2020): 11,426,356</li><li>Land Area (Km<sup>2</sup>): 27,560</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Honduras', 'Honduras', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PNH, Libre, PLH, PAC</li><li>Capital: Tegucigalpa</li><li>Population (2020): 9,931,333</li><li>Land Area (Km<sup>2</sup>): 111,890</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Hungary', 'Hungary', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Fidesz, HSP, Jobbik, CDDP, PCBD, DC, Together, DfH, HLP</li><li>Capital: Budapest</li><li>Population (2020): 9,655,983</li><li>Land Area (Km<sup>2</sup>): 90,530</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Iceland', 'Iceland', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Independence Party, Left-Green Movement, Progressive Party, Social Democratic Alliance, Centre Party, Pirate Party, People's Party, Reform Party</li><li>Capital: Reykjavík</li><li>Population (2020): 341,628</li><li>Land Area (Km<sup>2</sup>): 100,250</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['India', 'India', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): UPA, NDA, and Third Front Ruling Party(s)</li><li>Capital: New Delhi</li><li>Population (2020): 1,382,345,085</li><li>Land Area (Km<sup>2</sup>): 2,973,190</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Indonesia', 'Indonesia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Onward Indonesia Cabinet: PDI-P, NasDem, PKB, Hanura, Great Indonesia Movement Party, Golkar</li><li>Capital: Jakarta</li><li>Population (2020): 274,021,604</li><li>Land Area (Km<sup>2</sup>): 1,811,570</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Iran', 'Iran', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Principlists, Reformists, Independents</li><li>Capital: Tehran</li><li>Population (2020): 84,176,929</li><li>Land Area (Km<sup>2</sup>): 1,628,550</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Iraq', 'Iraq', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): IDQ, AM, AAB, PDK, YNK (PUK), Al-Arabiya, Gorran</li><li>Capital: Baghdad</li><li>Population (2020): 40,372,771</li><li>Land Area (Km<sup>2</sup>): 434,320</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Ireland', 'Ireland', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): SF, FG, FF (major Irish Ruling Party(s)); GP, LP, SD, S-PBP, I4C WP, RI (minor Irish Ruling Party(s))</li><li>Capital: Dublin</li><li>Population (2020): 4,947,267</li><li>Land Area (Km<sup>2</sup>): 68,890</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Isle of Man', 'Isle of Man', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): Independents, LVP</li><li>Capital: Douglas</li><li>Population (2020): 85,112</li><li>Land Area (Km<sup>2</sup>): 570</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Israel', 'Israel', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Likud, Blue and White, Joint List, Shas, UTJ, Yamina, Labor-Gesher, Yisrael Beiteinu, Democratic Union</li><li>Capital: Jerusalem</li><li>Population (2020): 8,678,517</li><li>Land Area (Km<sup>2</sup>): 21,640</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Italy', 'Italy', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): M5S, League, PD, FI, IV, FdI, Art.1, SI</li><li>Capital: Rome</li><li>Population (2020): 60,446,035</li><li>Land Area (Km<sup>2</sup>): 294,140</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Jamaica', 'Jamaica', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PNP, JLP</li><li>Capital: Kingston</li><li>Population (2020): 2,963,429</li><li>Land Area (Km<sup>2</sup>): 10,830</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Japan', 'Japan', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): LDP, NKP, CDP, DPFP, JCP, SDP, Ishin, RGGSP</li><li>Capital: Tokyo</li><li>Population (2020): 126,407,422</li><li>Land Area (Km<sup>2</sup>): 364,555</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Jordan', 'Jordan', "<ul class='chart-popup'><li>Party System: Constitutional Monarchy</li><li>Ruling Party(s): JSDP, IAF, Wasat, Zamzam</li><li>Capital: Amman</li><li>Population (2020): 10,220,604</li><li>Land Area (Km<sup>2</sup>): 88,780</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Kazakhstan', 'Kazakhstan', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Nur Otan</li><li>Capital: Astana</li><li>Population (2020): 18,815,231</li><li>Land Area (Km<sup>2</sup>): 2,699,700</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Kenya', 'Kenya', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): AP, APK, ANC, CP, DP, JP, KNC, MCC, PPK, URP</li><li>Capital: Nairobi</li><li>Population (2020): 53,968,739</li><li>Land Area (Km<sup>2</sup>): 569,140</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Kiribati', 'Kiribati', "<ul class='chart-popup'><li>Party System: BKM, TKP, Maurin Kiribati, National Progessive Party</li><li>Ruling Party(s): BKM, TKP, Maurin Kiribati, National Progessive Party</li><li>Capital: Tarawa</li><li>Population (2020): 119,760</li><li>Land Area (Km<sup>2</sup>): 810</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Kuwait', 'Kuwait', "<ul class='chart-popup'><li>Party System: N/A</li><li>Ruling Party(s): N/A</li><li>Capital: Kuwait City</li><li>Population (2020): 4,281,320</li><li>Land Area (Km<sup>2</sup>): 17,820</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Kyrgyzstan', 'Kyrgyzstan', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Mekenchil</li><li>Capital: Bishkek</li><li>Population (2020): 6,542,426</li><li>Land Area (Km<sup>2</sup>): 191,800</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Laos', 'Laos', "<ul class='chart-popup'><li>Party System: One Party</li><li>Ruling Party(s): Lao People's Revolutionary Party</li><li>Capital: Vientiane</li><li>Population (2020): 7,293,542</li><li>Land Area (Km<sup>2</sup>): 230,800</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Latvia', 'Latvia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Unity, National Alliance, New Conservative Party, Development/For!, Who Owns the State?</li><li>Capital: Riga</li><li>Population (2020): 1,882,408</li><li>Land Area (Km<sup>2</sup>): 62,200</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Lebanon', 'Lebanon', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Multi-Party</li><li>Capital: Beirut</li><li>Population (2020): 6,819,976</li><li>Land Area (Km<sup>2</sup>): 10,230</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Lesotho', 'Lesotho', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): All Basotho Convention, Alliance of Democrats, Basotho National Party, Reformed Congress of Lesotho</li><li>Capital: Maseru</li><li>Population (2020): 2,145,194</li><li>Land Area (Km<sup>2</sup>): 30,360</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Liberia', 'Liberia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Coalition for Democratic Change</li><li>Capital: Monrovia</li><li>Population (2020): 5,077,411</li><li>Land Area (Km<sup>2</sup>): 96,320</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Libya', 'Libya', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): National Forces Alliance</li><li>Capital: Tripoli</li><li>Population (2020): 6,887,247</li><li>Land Area (Km<sup>2</sup>): 1,759,540</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Liechtenstein', 'Liechtenstein', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FBP, VU, DU, FL</li><li>Capital: Vaduz</li><li>Population (2020): 38,147</li><li>Land Area (Km<sup>2</sup>): 160</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Lithuania', 'Lithuania', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Homeland Union, Liberal Movement, Freedom Party</li><li>Capital: Vilnius</li><li>Population (2020): 2,715,340</li><li>Land Area (Km<sup>2</sup>): 62,674</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Luxembourg', 'Luxembourg', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Democratic Party, Luxembourg Socialist Workers' Party, The Greens</li><li>Capital: Luxembourg</li><li>Population (2020): 627,704</li><li>Land Area (Km<sup>2</sup>): 2,590</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Madagascar', 'Madagascar', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Young Malagasies Determined</li><li>Capital: Antananarivo</li><li>Population (2020): 27,808,395</li><li>Land Area (Km<sup>2</sup>): 581,795</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Malawi', 'Malawi', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Malawi Congress Party</li><li>Capital: Lilongwe</li><li>Population (2020): 19,211,425</li><li>Land Area (Km<sup>2</sup>): 94,280</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Malaysia', 'Malaysia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Perikatan Nasional, Barisan Nasional, Gabungan Parti Sarawak, Parti Bersatu Sabah</li><li>Capital: Kuala Lumpur</li><li>Population (2020): 32,436,963</li><li>Land Area (Km<sup>2</sup>): 328,550</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Maldives', 'Maldives', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Maldivian Democratic Party</li><li>Capital: Malé</li><li>Population (2020): 542,151</li><li>Land Area (Km<sup>2</sup>): 300</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Mali', 'Mali', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Rally for Mali</li><li>Capital: Bamako</li><li>Population (2020): 20,346,106</li><li>Land Area (Km<sup>2</sup>): 1,220,190</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Malta', 'Malta', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): Labour, Nationalist</li><li>Capital: Valletta</li><li>Population (2020): 441,750</li><li>Land Area (Km<sup>2</sup>): 320</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Marshall Islands', 'Marshall Islands', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): Independent, AKA, KEA, UPP, UDP</li><li>Capital: Majuro</li><li>Population (2020): 59,259</li><li>Land Area (Km<sup>2</sup>): 180</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Mauritania', 'Mauritania', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Union for the Republic, APC, AJD/MR, UDP, UFP, Tawassoul</li><li>Capital: Nouakchott</li><li>Population (2020): 4,669,775</li><li>Land Area (Km<sup>2</sup>): 1,030,700</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Mauritius', 'Mauritius', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Mauritian Alliance (MSM, Plateforme Militante, ML), MAG</li><li>Capital: Port Louis</li><li>Population (2020): 1,272,140</li><li>Land Area (Km<sup>2</sup>): 2,030</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Mexico', 'Mexico', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): MORENA, PAN, PRI, PT, MC, PRD, PVEM, PES, FPM, RSP,</li><li>Capital: Mexico City</li><li>Population (2020): 129,166,028</li><li>Land Area (Km<sup>2</sup>): 1,943,950</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Moldova', 'Moldova', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Party of Action and Solidarity, Dignity and Truth Platform Party, Party of Socialists of the Republic of Moldova</li><li>Capital: Chisinau</li><li>Population (2020): 4,032,294</li><li>Land Area (Km<sup>2</sup>): 32,850</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Monaco', 'Monaco', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Primo ! Priorité Monaco</li><li>Capital: Monaco</li><li>Population (2020): 39,290</li><li>Land Area (Km<sup>2</sup>): 1</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Mongolia', 'Mongolia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Democratic Party, Mongolian People's Party, Civil Will-Green Party, Mongolian National Democratic Party</li><li>Capital: Ulaanbaatar</li><li>Population (2020): 3,287,242</li><li>Land Area (Km<sup>2</sup>): 1,553,560</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Montenegro', 'Montenegro', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): For the Future of Montenegro, Peace is Our Nation, United Reform Action</li><li>Capital: Podgorica</li><li>Population (2020): 628,080</li><li>Land Area (Km<sup>2</sup>): 13,450</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Montserrat', 'Montserrat', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): MCP, MDP, PDM</li><li>Capital: Plymouth</li><li>Population (2020): 4,993</li><li>Land Area (Km<sup>2</sup>): 100</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Morocco', 'Morocco', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Justice and Development Party</li><li>Capital: Rabat</li><li>Population (2020): 36,985,624</li><li>Land Area (Km<sup>2</sup>): 446,300</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Mozambique', 'Mozambique', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FRELIMO, RENAMO, MDM</li><li>Capital: Maputo</li><li>Population (2020): 31,398,811</li><li>Land Area (Km<sup>2</sup>): 786,380</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Myanmar', 'Myanmar', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): NLD, USDP</li><li>Capital: Naypyidaw</li><li>Population (2020): 54,473,253</li><li>Land Area (Km<sup>2</sup>): 653,290</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Namibia', 'Namibia', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): SWAPO</li><li>Capital: Windhoek</li><li>Population (2020): 2,548,663</li><li>Land Area (Km<sup>2</sup>): 823,290</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Nauru', 'Nauru', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Democratic Party of Nauru, Nauru First Party, Centre Party</li><li>Capital: Yaren</li><li>Population (2020): 10,836</li><li>Land Area (Km<sup>2</sup>): 20</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Nepal', 'Nepal', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CPN (UML), CPN(M), NC, PSP-N, RPP, RJM, NMKP</li><li>Capital: Kathmandu</li><li>Population (2020): 29,225,196</li><li>Land Area (Km<sup>2</sup>): 143,350</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Netherlands', 'Netherlands', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): VVD, PVV, CDA, D66, GL, SP, PvdA, CU, PvdD, 50Plus, SGP, DENK, FvD</li><li>Capital: Amsterdam</li><li>Population (2020): 17,141,544</li><li>Land Area (Km<sup>2</sup>): 33,720</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['New Caledonia', 'New Caledonia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Caledonia Together, The Rally-UMP, Union for Caledonia in France</li><li>Capital: Nouméa</li><li>Population (2020): 285,972</li><li>Land Area (Km<sup>2</sup>): 18,280</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['New Zealand', 'New Zealand', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Labour, National, ACT, Greens, Māori</li><li>Capital: Wellington</li><li>Population (2020): 4,829,021</li><li>Land Area (Km<sup>2</sup>): 263,310</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Nicaragua', 'Nicaragua', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FSLN, PLI, PLC</li><li>Capital: Managua</li><li>Population (2020): 6,638,075</li><li>Land Area (Km<sup>2</sup>): 120,340</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Niger', 'Niger', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PNDS</li><li>Capital: Niamey</li><li>Population (2020): 24,346,468</li><li>Land Area (Km<sup>2</sup>): 1,266,700</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Nigeria', 'Nigeria', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): APC</li><li>Capital: Abuja</li><li>Population (2020): 206,984,347</li><li>Land Area (Km<sup>2</sup>): 910,770</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Niue', 'Niue', "<ul class='chart-popup'><li>Party System: Non-partisan Democracy</li><li>Ruling Party(s): N/A</li><li>Capital: Alofi</li><li>Population (2020): 1,628</li><li>Land Area (Km<sup>2</sup>): 260</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['North Korea', 'North Korea', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): WPK, KSDP, CCP</li><li>Capital: Pyongyang</li><li>Population (2020): 25,798,588</li><li>Land Area (Km<sup>2</sup>): 120,410</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Northern Mariana Islands', 'Northern Mariana Islands', "<ul class='chart-popup'><li>Party System:     Covenant Party. Democratic Party, Reform Party, Republican Party</li><li>Ruling Party(s): Covenant Party, Democratic Party, Reform Party, Republican Party</li><li>Capital: Saipan</li><li>Population (2020): 57,619</li><li>Land Area (Km<sup>2</sup>): 460</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Norway', 'Norway', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Ap, H, FrP, Sp, SV, V, KrF, Mdg, R</li><li>Capital: Oslo</li><li>Population (2020): 5,428,594</li><li>Land Area (Km<sup>2</sup>): 365,268</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Oman', 'Oman', "<ul class='chart-popup'><li>Party System: N/A</li><li>Ruling Party(s): N/A</li><li>Capital: Muscat</li><li>Population (2020): 5,128,058</li><li>Land Area (Km<sup>2</sup>): 309,500</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Pakistan', 'Pakistan', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Pakistan Muslim League (N), Pakistan Tehreek-e-Insaf, Pakistan Peoples Party</li><li>Capital: Islamabad</li><li>Population (2020): 221,612,785</li><li>Land Area (Km<sup>2</sup>): 770,880</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Palau', 'Palau', "<ul class='chart-popup'><li>Party System: Non-partisan Democracy</li><li>Ruling Party(s): N/A</li><li>Capital: Ngerulmud</li><li>Population (2020): 18,109</li><li>Land Area (Km<sup>2</sup>): 460</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Panama', 'Panama', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CD, PRD, PP</li><li>Capital: Panama City</li><li>Population (2020): 4,326,296</li><li>Land Area (Km<sup>2</sup>): 74,340</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Papua New Guinea', 'Papua New Guinea', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Democratic Revolutionary Party</li><li>Capital: Port Moresby</li><li>Population (2020): 8,975,531</li><li>Land Area (Km<sup>2</sup>): 452,860</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Paraguay', 'Paraguay', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Col, PLRA, FG</li><li>Capital: Asunción</li><li>Population (2020): 7,147,553</li><li>Land Area (Km<sup>2</sup>): 397,300</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Peru', 'Peru', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Multi-Party</li><li>Capital: Lima</li><li>Population (2020): 33,050,211</li><li>Land Area (Km<sup>2</sup>): 1,280,000</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Philippines', 'Philippines', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): LP, NP, PDP-Laban, Lakas-CMD, LDP, NPC, PMP, PDSP, UNA, Akbayan, NUP, PRP</li><li>Capital: Manila</li><li>Population (2020): 109,830,324</li><li>Land Area (Km<sup>2</sup>): 298,170</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Poland', 'Poland', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): United Right (PiS, SP, Porozumienie);  Civic Coalition (PO, .N, IPL, Zieloni);  The Left (SLD, Wiosna, Razem, PPS);  Polish Coalition (PSL, UED)  Confederation (KORWiN, RN, Korona);  K'15, Poland 2050, MN </li><li>Capital: Warsaw</li><li>Population (2020): 37,839,255</li><li>Land Area (Km<sup>2</sup>): 306,230</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Portugal', 'Portugal', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PS, PPD/PSD, CDS-PP, PCP, BE, PAN, PEV, CH, IL, L</li><li>Capital: Lisbon</li><li>Population (2020): 10,191,409</li><li>Land Area (Km<sup>2</sup>): 91,590</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Puerto Rico', 'Puerto Rico', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PPD, PNP</li><li>Capital: San Juan</li><li>Population (2020): 2,846,860</li><li>Land Area (Km<sup>2</sup>): 8,870</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Qatar', 'Qatar', "<ul class='chart-popup'><li>Party System: De Facto Absolute Monarchy</li><li>Ruling Party(s): N/A</li><li>Capital: Doha</li><li>Population (2020): 2,889,284</li><li>Land Area (Km<sup>2</sup>): 11,610</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Romania', 'Romania', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PSD, PNL, USR-PLUS, UDMR, AUR</li><li>Capital: Bucharest</li><li>Population (2020): 19,214,608</li><li>Land Area (Km<sup>2</sup>): 230,170</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Russia', 'Russia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): United Russia, CPRF, LDPR, SR, Rodina, Civic Platform</li><li>Capital: Moscow</li><li>Population (2020): 145,945,524</li><li>Land Area (Km<sup>2</sup>): 16,376,870</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Rwanda', 'Rwanda', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Rwandan Patriotic Front</li><li>Capital: Kigali</li><li>Population (2020): 13,005,303</li><li>Land Area (Km<sup>2</sup>): 24,670</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Saint Helena', 'Saint Helena', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Saint Helena Democratic Party</li><li>Capital: Jamestown</li><li>Population (2020): 6,080</li><li>Land Area (Km<sup>2</sup>): 390</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Saint Lucia', 'Saint Lucia', "<ul class='chart-popup'><li>Party System: Labour Party, United Workers Party</li><li>Ruling Party(s): Labour Party, United Workers Party</li><li>Capital: Castries</li><li>Population (2020): 183,774</li><li>Land Area (Km<sup>2</sup>): 610</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Saint Martin', 'Saint Martin', "<ul class='chart-popup'><li>Party System: N/A</li><li>Ruling Party(s): N/A</li><li>Capital: Marigot</li><li>Population (2020): 38,778</li><li>Land Area (Km<sup>2</sup>): 53</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Samoa', 'Samoa', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Human Rights Protection Party</li><li>Capital: Apia</li><li>Population (2020): 198,643</li><li>Land Area (Km<sup>2</sup>): 2,830</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['San Marino', 'San Marino', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Captains Regent - Civic 10 and Christian Democratic Party parliament - Christian Democratic Party, Tomorrow in Motion alliance (RETE Movement, Domani Motus Liberi and Direct coalition votes), Noi per la Repubblica</li><li>Capital: San Marino</li><li>Population (2020): 33,944</li><li>Land Area (Km<sup>2</sup>): 60</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Saudi Arabia', 'Saudi Arabia', "<ul class='chart-popup'><li>Party System: Absolute Monarchy</li><li>Ruling Party(s): N/A</li><li>Capital: Riyadh</li><li>Population (2020): 34,905,942</li><li>Land Area (Km<sup>2</sup>): 2,149,690</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Senegal', 'Senegal', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Alliance for the Republic</li><li>Capital: Dakar</li><li>Population (2020): 16,816,539</li><li>Land Area (Km<sup>2</sup>): 192,530</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Serbia', 'Serbia', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Serbian Progressive Party</li><li>Capital: Belgrade</li><li>Population (2020): 8,731,081</li><li>Land Area (Km<sup>2</sup>): 87,460</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Seychelles', 'Seychelles', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): United Seychelles Party</li><li>Capital: Victoria</li><li>Population (2020): 98,453</li><li>Land Area (Km<sup>2</sup>): 460</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Sierra Leone', 'Sierra Leone', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Sierra Leone People's Party</li><li>Capital: Freetown</li><li>Population (2020): 8,004,158</li><li>Land Area (Km<sup>2</sup>): 72,180</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Singapore', 'Singapore', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): People's Action Party, WP, SDP, NSP, RP, PSP, PV, SDA, SPP, PPP</li><li>Capital: Singapore</li><li>Population (2020): 5,858,322</li><li>Land Area (Km<sup>2</sup>): 700</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Sint Maarten', 'Sint Maarten', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): UD, NA, USP, SMCP</li><li>Capital: Philipsburg</li><li>Population (2020): 42,960</li><li>Land Area (Km<sup>2</sup>): 34</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Slovakia', 'Slovakia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Ordinary People, We Are Family, Freedom and Solidarity, For the People</li><li>Capital: Bratislava</li><li>Population (2020): 5,460,109</li><li>Land Area (Km<sup>2</sup>): 48,088</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Slovenia', 'Slovenia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): </li><li>Capital: Ljubljana</li><li>Population (2020): 2,078,989</li><li>Land Area (Km<sup>2</sup>): 20,140</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Solomon Islands', 'Solomon Islands', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): National Coalition for Reform and Advancement</li><li>Capital: Honiara</li><li>Population (2020): 689,671</li><li>Land Area (Km<sup>2</sup>): 27,990</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Somalia', 'Somalia', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Tayo</li><li>Capital: Mogadishu</li><li>Population (2020): 15,965,848</li><li>Land Area (Km<sup>2</sup>): 627,340</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['South Africa', 'South Africa', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): African National Congress</li><li>Capital: Pretoria</li><li>Population (2020): 59,436,725</li><li>Land Area (Km<sup>2</sup>): 1,213,090</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['South Korea', 'South Korea', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): DP, PPP, JP, PP, ODP</li><li>Capital: Seoul</li><li>Population (2020): 51,276,977</li><li>Land Area (Km<sup>2</sup>): 97,230</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['South Sudan', 'South Sudan', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Sudan People's Liberation Movement</li><li>Capital: Juba</li><li>Population (2020): 11,216,250</li><li>Land Area (Km<sup>2</sup>): 610,952</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Spain', 'Spain', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): PP, PSOE, Unidas Podemos, Cs, Vox, ERC, PNV, Junts per Catalunya, EH Bildu, PRC, CC-PNC, UPN-Navarra Suma, Compromís</li><li>Capital: Madrid</li><li>Population (2020): 46,757,980</li><li>Land Area (Km<sup>2</sup>): 498,800</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Sri Lanka', 'Sri Lanka', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): UPFA, UNF, TNA, DNA, UCPF, TMVP, SMBP, TULF, TNPF, DPLF</li><li>Capital: Sri Jayawardenapura Kotte</li><li>Population (2020): 21,428,970</li><li>Land Area (Km<sup>2</sup>): 62,710</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Sudan', 'Sudan', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): NC, DUP, PCP, UP, SCP</li><li>Capital: Khartoum</li><li>Population (2020): 44,019,263</li><li>Land Area (Km<sup>2</sup>): 1,765,048</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Suriname', 'Suriname', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): VHP, ABOP, PL, NPS</li><li>Capital: Paramaribo</li><li>Population (2020): 587,541</li><li>Land Area (Km<sup>2</sup>): 156,000</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Sweden', 'Sweden', "<ul class='chart-popup'><li>Party System: Independent Candidates</li><li>Ruling Party(s): N/A</li><li>Capital: Stockholm</li><li>Population (2020): 10,110,233</li><li>Land Area (Km<sup>2</sup>): 410,340</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Switzerland', 'Switzerland', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): SVP-UDC, SP-PSS, FDP-PLR, CVP-PDC-PPD, GPS-PES, GLP-PVL, BDP-PBD, EVP-PEV, LEGA, PDA-POP, MCG, CSP-PCS</li><li>Capital: Bern</li><li>Population (2020): 8,665,615</li><li>Land Area (Km<sup>2</sup>): 39,516</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Syria', 'Syria', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Ba'ath Party, NIACS, People's Will Party, National Progressive Front, Syrian Social Nationalist Party</li><li>Capital: Damascus</li><li>Population (2020): 17,571,053</li><li>Land Area (Km<sup>2</sup>): 183,630</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Tajikistan', 'Tajikistan', "<ul class='chart-popup'><li>Party System: Dominant</li><li>Ruling Party(s): PDPT</li><li>Capital: Dushanbe</li><li>Population (2020): 9,573,310</li><li>Land Area (Km<sup>2</sup>): 139,960</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Tanzania', 'Tanzania', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): CUF, CCM, CHADEMA, ACT, CHAUMA, NCCR Mageuzi, TLP, NLD,</li><li>Capital: Dodoma</li><li>Population (2020): 60,012,400</li><li>Land Area (Km<sup>2</sup>): 885,800</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Thailand', 'Thailand', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Pheu Thai Party, Palang Pracharat Party, Move Forward Party, Democrat Party (Thailand), Bhumjaithai Party</li><li>Capital: Bangkok</li><li>Population (2020): 69,830,779</li><li>Land Area (Km<sup>2</sup>): 510,890</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Togo', 'Togo', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): Union for the Republic</li><li>Capital: Lomé</li><li>Population (2020): 8,310,934</li><li>Land Area (Km<sup>2</sup>): 54,390</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Tonga', 'Tonga', "<ul class='chart-popup'><li>Party System: Non-partisan Democracy</li><li>Ruling Party(s): N/A</li><li>Capital: Nukuʻalofa</li><li>Population (2020): 105,901</li><li>Land Area (Km<sup>2</sup>): 720</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Trinidad and Tobago', 'Trinidad and Tobago', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): PNM, UNC</li><li>Capital: Port of Spain</li><li>Population (2020): 1,400,283</li><li>Land Area (Km<sup>2</sup>): 5,130</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Tunisia', 'Tunisia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): NT, EM, FPU, PF, AT, CR, DC, NDI, PM, CL, DAP, FVP, MSD, NFS, RP</li><li>Capital: Tunis</li><li>Population (2020): 11,839,918</li><li>Land Area (Km<sup>2</sup>): 155,360</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Turkey', 'Turkey', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): AK Party, CHP, MHP, HDP, İYİ Party, BBP, DP, TIP, SP, DEVA, LDP</li><li>Capital: Ankara</li><li>Population (2020): 84,495,243</li><li>Land Area (Km<sup>2</sup>): 769,630</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Turkmenistan', 'Turkmenistan', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): DPT</li><li>Capital: Ashgabat</li><li>Population (2020): 6,046,292</li><li>Land Area (Km<sup>2</sup>): 469,930</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Tuvalu', 'Tuvalu', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): PDM, PNP</li><li>Capital: Funafuti</li><li>Population (2020): 11,817</li><li>Land Area (Km<sup>2</sup>): 30</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Uganda', 'Uganda', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): DP, NRM, CP, UPC, FDC, JEEMA, PDP, PPP</li><li>Capital: Kampala</li><li>Population (2020): 45,974,931</li><li>Land Area (Km<sup>2</sup>): 199,810</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Ukraine', 'Ukraine', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Servant, OPZZh, ES, Bat, Voice, FF</li><li>Capital: Kiev</li><li>Population (2020): 43,686,577</li><li>Land Area (Km<sup>2</sup>): 579,320</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['United Arab Emirates', 'United Arab Emirates', "<ul class='chart-popup'><li>Party System: Non-partisan Semi-democratic State</li><li>Ruling Party(s): N/A</li><li>Capital: Abu Dhabi</li><li>Population (2020): 9,910,892</li><li>Land Area (Km<sup>2</sup>): 83,600</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['United States', 'United States', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): A, C, D, F, G, L, N, R, S, WC, WF</li><li>Capital: Washington, D.C.</li><li>Population (2020): 331,341,050</li><li>Land Area (Km<sup>2</sup>): 9,147,420</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Uruguay', 'Uruguay', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): FA, PN, Col, PI</li><li>Capital: Montevideo</li><li>Population (2020): 3,475,842</li><li>Land Area (Km<sup>2</sup>): 175,020</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Uzbekistan', 'Uzbekistan', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): ULDP, UNRDP, PDPU, JSDP, EM</li><li>Capital: Tashkent</li><li>Population (2020): 33,551,824</li><li>Land Area (Km<sup>2</sup>): 425,400</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Vanuatu', 'Vanuatu', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Multi-Party</li><li>Capital: Port Vila</li><li>Population (2020): 308,337</li><li>Land Area (Km<sup>2</sup>): 12,190</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Venezuela', 'Venezuela', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): PSUV</li><li>Capital: Caracas</li><li>Population (2020): 28,421,581</li><li>Land Area (Km<sup>2</sup>): 882,050</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Vietnam', 'Vietnam', "<ul class='chart-popup'><li>Party System: One Party</li><li>Ruling Party(s): CPV</li><li>Capital: Hanoi</li><li>Population (2020): 97,490,013</li><li>Land Area (Km<sup>2</sup>): 310,070</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Western Sahara', 'Western Sahara', "<ul class='chart-popup'><li>Party System: One Party</li><li>Ruling Party(s): Polisario Front</li><li>Capital: El Aaiún</li><li>Population (2020): 599,769</li><li>Land Area (Km<sup>2</sup>): 266,000</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Yemen', 'Yemen', "<ul class='chart-popup'><li>Party System: Dominant Party</li><li>Ruling Party(s): GPC</li><li>Capital: Sanaá</li><li>Population (2020): 29,935,468</li><li>Land Area (Km<sup>2</sup>): 527,970</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Zambia', 'Zambia', "<ul class='chart-popup'><li>Party System: Multi-Party</li><li>Ruling Party(s): Patriotic Front</li><li>Capital: Lusaka</li><li>Population (2020): 18,468,257</li><li>Land Area (Km<sup>2</sup>): 743,390</li></ul> <style>.chart-popup {width:200px;}</style>"],
+							['Zimbabwe', 'Zimbabwe', "<ul class='chart-popup'><li>Party System: Two Party</li><li>Ruling Party(s): ZANU-PF, MDC-Alliance</li><li>Capital: Harare</li><li>Population (2020): 14,899,771</li><li>Land Area (Km<sup>2</sup>): 386,850</li></ul> <style>.chart-popup {width:200px;}</style>"],
+
+
+							]);
+
+							var options = {            tooltip: { isHtml: true, trigger: "visible" }};
+
+							var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+							chart.draw(data, options);
+						}
+						</script>
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Global Map</h2>
+										</header>
+
+										<div id="regions_div" style="width: 900px; height: 900;"></div>
+										
+										<ul class="actions">
+											<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>About</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-code"></span>
+										<h3>Description 1</h3>
+										<p>You can put whatever you want here @ghost.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Description 2</h3>
+										<p>Same thing for this one!</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>Description 3.</h3>
+										<p>I can change out the icons for something that's more relevant as well.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+										<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Additional Resources</h2>
+									<p>This is where you can link some additional resources<br />
+									about political science and making this like a hub of sorts.</p>
+								</header>
+								<!-- <ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>5,120</strong> Etiam
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>8,192</strong> Magna
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>2,048</strong> Tempus
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>1,024</strong> Nullam
+									</li>
+								</ul> -->
+								<p class="content">Filler text: Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<footer class="major">
+									<ul class="actions special">
+										<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Sources</h2>
+									<p>The various websites and datasets used to compile the global map.<br />
+									...</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
